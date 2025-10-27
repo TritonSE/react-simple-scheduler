@@ -1,4 +1,6 @@
-# react-simple-scheduler v1.2.7
+TSE's internal fork of https://github.com/Cubified/react-simple-scheduler that we keep up to date with latest version of React & other dependencies.
+
+# react-simple-scheduler v1.4.1
 
 | Demo |
 | --- |
@@ -26,9 +28,9 @@ Simple, extensible scheduler and calendar components for React, modeled after Go
 
 To install, run:
 
-     $ npm install --save @cubedoodl/react-simple-scheduler
+     $ npm install --save @tritonse/react-simple-scheduler
      # Or:
-     $ yarn add @cubedoodl/react-simple-scheduler
+     $ yarn add @tritonse/react-simple-scheduler
 
 ## Example
 
@@ -36,7 +38,7 @@ Minimal usage of both modules (including the custom hook) is as follows:
 
 ```jsx
 import React, { useState } from "react";
-import { Calendar, Scheduler, useArrayState } from "@cubedoodl/react-simple-scheduler";
+import { Calendar, Scheduler, useArrayState } from "@tritonse/react-simple-scheduler";
 
 function App(){
   const [selected, setSelected] = useState(new Date());
@@ -247,7 +249,7 @@ removeEl(2);         // arr is now [ 1, 3, 4 ]
 
 First, install dependencies with:
 
-     $ npm
+     $ npm install
      # Or:
      $ yarn
 

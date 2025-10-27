@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import { Calendar, Scheduler, MobileScheduler, useArrayState } from "@cubedoodl/react-simple-scheduler";
+import { createRoot } from 'react-dom/client';
+import { Calendar, Scheduler, MobileScheduler, useArrayState } from "@tritonse/react-simple-scheduler";
 /* import { Calendar, Scheduler, MobileScheduler, useArrayState } from "./dist"; */
 import "./index.css";
 
@@ -75,9 +75,8 @@ function App() {
   );
 }
 
-ReactDOM.render(
-  <React.StrictMode>
+    const container = document.getElementById('root');
+    const root = createRoot(container);
+    root.render( <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  </React.StrictMode>);
